@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="num"></p>
+    <script>
+        let x = 3;
+        let y = -7;
+        let z = 2;
+        if (x > 0 && y > 0 && z > 0) {
+            result="The sign is +";
+        } else if (x < 0 && y < 0 && z < 0) {
+            result="The sign is -";
+        } else if (x > 0 && y < 0 && z < 0) {
+            result="The sign is +";
+        } else if (x < 0 && y > 0 && z < 0) {
+            result="The sign is +";
+        } else {
+            result="The sign is -";
+        }
+        document.getElementById('num').innerHTML=result;
+    </script>
+</body>
+
+</html>

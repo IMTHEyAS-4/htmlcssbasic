@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/057e168c92.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <label for="" class="logo"><span>I</span>mtheyas.</label>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Cantact</a></li>
+                </ul>
+            </nav>
+            <div class="header-txt">
+                <p>Full Stack Web Devloper</p>
+                <h1>Hi, I'm Shameem <span>Imtheyas</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a results-driven Software Developer with hands-on experience in
+                        web development, specializing in Python, Django, XAMPP, and frontend technologies like HTML,
+                        CSS, and JavaScript. I excel at designing
+                        and deploying user-centric e-commerce platforms, enhancing user
+                        engagement by 30%, and optimizing website performance to reduce
+                        load times by 20%. Skilled in collaborating with cross-functional teams,
+                        I am committed to delivering high-quality solutions within tight
+                        deadlines while staying updated with the latest industry trends and
+                        technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>Hithyathul Islam HR SEC School</li>
+                            <li><span>2018-2019</span><br>Hithyathul Islam HR SEC School</li>
+                            <li><span>2021-2025</span><br>MIET Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------- Contact ------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="cantact-items">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shahavara5@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7010669491</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Footer----------- -->
+    <div class="copyright">
+        <p>All right reserve © Imthi.<i class="fa-solid fa-heart-pulse"></i></p>
+    </div>
+    <!-- -----script---------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>

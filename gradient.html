@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grad {
+            height: 250px;
+            background-image: linear-gradient(to right, pink, white, red, yellow);
+
+        }
+
+        .rgrad {
+            height: 400px;
+            width: 300px;
+            background-image: radial-gradient(black, white, brown);
+        }
+
+        .conic-gradient {
+            height: 400px;
+            background-image: conic-gradient(blue, yellow, green);
+        }
+
+        .transform {
+            width: 400px;
+            height: 300px;
+            border-style: solid;
+            border-color: blueviolet;
+            transform: translate(70px, 150px);
+        }
+
+        .container {
+            height: 400px;
+            width: 300px;
+            background-image: linear-gradient(black, white);
+            border-style: solid;
+        }
+
+        .rotate {
+            height: 300px;
+            width: 300px;
+            transform: rotate(-40deg);
+            background-color: black;
+            justify-content: center;
+        }
+
+        .scale {
+            height: 450px;
+            width: 450px;
+            background-color: brown;
+            color: white;
+            transform: scale(0.5, 0.5);
+        }
+
+        .empty {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .empty:hover {
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+
+        .anime {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grad">
+
+    </div>
+    <div class="rgrad">
+        <h2>radial-gradient</h2>
+    </div>
+    <div class="conic-gradient"></div>
+    <div class="transform">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis non ipsum cupiditate laudantium quisquam
+            voluptatibus necessitatibus error, deserunt nisi, odio, doloribus porro est quidem similique dolor illum
+            excepturi commodi aliquid?</p>
+    </div>
+    <div class="container">
+
+    </div>
+    <div class="rotate">
+
+    </div>
+    <div class="scale">
+        <h2>Scale</h2>
+    </div>
+    <div class="empty">
+
+    </div>
+    <div class="anime">
+
+    </div>
+</body>
+
+</html>

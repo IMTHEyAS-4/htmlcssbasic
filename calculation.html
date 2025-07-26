@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border-style: solid;
+            border-radius: 20px;
+            background-color: rgb(146, 33, 161);
+            width: 50%;
+            margin-top: 100px;
+            margin-left: 300px;
+            border: none;
+            padding: 25px;
+        }
+        .container h1{
+            text-align: center;
+            color: white;
+        }
+        .operation-btns{
+            margin: 50px 500px ;
+        }
+        .btn{
+            padding: 5px 30px;
+            border-radius: 10px;
+            margin-right: 5px;
+            background-color: black;
+            color: aliceblue;
+            transition: transform 0.5s;
+        }
+        .btn:hover{
+            transform: translateY(-5px);
+        }
+    </style>
+    <script src="ope.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1> A=20 & B=5 </h1>
+        <h1 id="fun"></h1>  
+    </div>
+    <div class="operation-btns">
+        <button class="btn" type="button" onclick="add()"><h1>+</h1></button>
+        <button class="btn" type="button" onclick="sub()"><h1>-</h1></button>
+        <button class="btn" type="button" onclick="mul()"><h1>*</h1></button>
+        <button class="btn" type="button" onclick="div()"><h1>/</h1></button>
+    </div>
+</body>
+</html>

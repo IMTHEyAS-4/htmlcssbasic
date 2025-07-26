@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="then">
+        <h1 id="operator"></h1>
+    </div>
+    <script>
+        let x=5;
+        let y=8;
+        let z='*';
+        let result;
+        switch(z){
+            case '+':
+                result=x+y;
+                break
+            case '-':
+                result=x-y;
+                break
+            case '*':
+                result=x*y;
+                break
+            case '/':
+                result=x/y;
+                break
+            default:result="no other operation";
+        }
+        document.getElementById('operator').innerHTML=result;
+    </script>
+</body>
+</html>

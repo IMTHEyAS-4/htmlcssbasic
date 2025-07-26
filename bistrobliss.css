@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.nav-bar {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.fav-icon {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -0.4px;
+    color: rgba(71, 71, 71, 1);
+    display: flex;
+}
+.fav-icon img{
+    width: 56px;
+    height: 55px;
+}
+
+.Navigating {
+    padding-left: 200px;
+}
+
+.nav-bar .btnn {
+    float: right;
+    padding-left: 350px;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: rgba(71, 71, 71, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btnn a:hover {
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border: none;
+    background-color: brown;
+}
+
+.Navigating a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: rgba(71, 71, 71, 1);
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.Navigating a:hover {
+    border-style: solid;
+    border-color: black;
+    border: none;
+    color: #f9f9f9;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(85, 99, 99, 0.5);
+}
+
+.herosec {
+    background: url(ella-olsson-oPBjWBCcAEo-unsplash.jpg);
+    background-size: cover;
+    padding: 100px;
+    height: 700px;
+    padding-top: 200px;
+}
+
+.herosec h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(48, 46, 46);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.herosec p {
+    padding-left: 300px;
+    padding-right: 350px;
+    color: rgba(71, 71, 71, 1);
+    text-align: center;
+    font-weight: 500;
+}
+
+.bot {
+    justify-content: center;
+    padding-left: 450px;
+    margin-top: 50px;
+
+}
+
+.herosec .bot a {
+    text-decoration: none;
+    color: rgba(71, 71, 71, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bot a:hover {
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border: none;
+    background-color: brown;
+}
+
+.section1 {
+    margin: 100px;
+}
+
+.section1 h2 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+.card-content p{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+.card i{
+    height: 100px;
+}
+.card-content a{
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    color:  brown;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+.row1{
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.container {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.info-card {
+  position: absolute;
+  bottom: -30px;
+  left: 120px;
+  background-color: rgba(71, 71, 71, 1);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 80%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.container-right{
+    width: 500px;
+}
+.container-right h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.container-right p{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(71, 71, 71, 1);
+}
+.container-right a{
+    text-decoration: none;
+    color: rgba(71, 71, 71, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 25px;
+    padding: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 20px;
+}
+.container-right a:hover{
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border: none;
+    background-color: brown;
+}
+.section2{
+    background-color: rgba(249, 249, 247, 1);
+    padding-bottom: 50px;
+}
+.section3{
+    padding: 100px;
+}
